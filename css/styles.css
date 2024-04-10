@@ -533,11 +533,15 @@ header, .navbar {
   #mainSlider .carousel-caption p {
     display: none;
   }
-  
+
+  .w-100{
+    max-height: 250px;
+
+  }
 
   .carousel-caption .main-btn {
-    
-    font-size: 14px;
+   
+    font-size: 10px;
   }
 
   /* about */
