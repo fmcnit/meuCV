@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu CVV - Curriculum Vitae Virtual</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/330badaf59.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+           Fabiano Magalhães Cardoso <br><span id="subtitle">Web Page Vitae</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#ancora1">Home</a>
+            <a class="nav-item nav-link" id="services-menu" href="#ancora2">Conhecimento</a>
+            <a class="nav-item nav-link" id="about-menu" href="#ancora3">Formação</a>
+            <!-- <a class="nav-item nav-link" id="portfolio-menu" href="#">Projetos</a> -->
+            <a class="nav-item nav-link" id="contact-menu" href="#ancora4">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+
+            <!-- tirar classe d-none -->
+
+            <div class="carousel-caption d-md-block">
+              <h2>Especializado em Javascript</h5>
+              <p>Me especializei em todas as Lib's e Frameworks do mercado mais famosos como REACT, ANGULAR, NEXTJS</p>
+              <a href="#" class="main-btn">Ver portfólio</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="Engenharia de software">
+            <div class="carousel-caption d-md-block">
+              <h2>Está querendo tirar o projeto do papel?</h5>
+              <p>Tenho inúmeros projetos estilizáveis que podem se adaptar as mais diversas soluções</p>
+              <a href="#ancora4" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em software">
+            <div class="carousel-caption d-md-block c-red">
+              <h2>Buscando uma aplicação moderna?</h5>
+              <p>React é usado nas principais empresas do mundo e tem todas as ferramentas para deixar seu projeto moderno.</p>
+              <a href="#ancora4" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Sobre  -->
+      <div id="about-area"><a name="ancora1"></a>
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Sobre Mim</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/foto_1.png" alt="Fabiano_Magalhães">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Desenvolvedor Full Stack</h3>
+                <br>
+                <p>Especializado em Javascript e todos seus frameworks mais usados, assim como as principais tecnologias de CSS usadas para layout da Web, além de NodeJS um runtime de javascript com V8 engine, a mesma usada pelos principais navegadores do mercado, gerando uma melhor perfomance para o back-end.</p>
+                <br>
+                <p>Javascript é uma linguagem de programação usada para dar mais funcionalidades a uma página Web e seus frameworks estão dominando o mercado de aplicações Web. React, NextJS e Angular são as ferramentas mais usadas em desenvolvimentos web, pois usam tecnologias para criar SPA's.</p>
+              
+                <p>Spa's ou Single Pages Applications são aplicações web que não recarregam a páigina toda vez que o usuário clica em algum elemento, elas apenas renderizam o contéúdo sem fazer o page reload tornando a experiência do usúario bem mais agradável</p>
+                
+      
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Serviços  -->
+      <div id="services-area"><a name="ancora2"></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Minhas Hards Skills</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-mobile-alt"></i>
+              <h4>Mobile</h4>
+              <p>Utilizamos React Native para dispositivos móveis construindo aplicativos nativos.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-shopping-cart"></i>
+              <h4>Aplicações</h4>
+              <p>Criação de aplicações web usando o conceito de mobile first e SPA's que hoje em dia dominam o mercado web como React, NextJs, Vite, Vue e Angular</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-paint-brush"></i>
+              <h4>Design Criativo</h4>
+              <p>Para um estlização moderna responsiva e agradável, frameworks de Css como bootstrap e Tailwind geram uniformidade por todos os elementos da aplicação</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fab fa-google"></i>
+              <h4>Git e GitHub</h4>
+              <p>Software de controle de versionamento do código.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-hands-helping"></i>
+              <h4>Banco de dados</h4>
+              <p>Para uma aplicação em maior escala, arquitetura e a escolha de um banco de dados são fundamentais. Linguagem Sql ou No-Sql, bancos relacionais ou não relacionais.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-server"></i>
+              <h4>Back-end</h4>
+              <p>Node Js com V8 engine é um software run time de javascript que usa a mesma tecnologia do Google Chrome e compila em linguagem C++ de alta performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Formação -->
+      <div id="apply-area"><a name="ancora3"></a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 apply-box" id="company-img"></div>
+            <div class="col-md-6 apply-box" id="pattern-img">
+              <h2>Formação</h2>
+              <p>Universidade Estácio de Sá</p>
+              <small>Análise e desenvolvimento de sistemas - 2024</small>
+              <hr>
+              <p>Universidade Salgado de Oliveira</p>
+              <small>Publicidade e Marketing - 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfólio -->
+      <!-- <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça meus projetos</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
+              <button class="main-btn filter-btn" id="dsg-btn">Design</button>
+              <button class="main-btn filter-btn" id="seo-btn">SEO</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Newsletter -->
+      <!-- <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </div> -->
+
+      <!-- Contatos -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <h3><a name="contato"></a>Contatos:</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area"><a name="ancora4"></a>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Para entrar diretamente em contato:</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Whatsapp</span> (21)98714-9205</p>
+
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> fmc_nit@hotmail.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Endereço: </span> Rua Teodoro Rivieri - 481 - Coelho/ SG</p>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="main-title">Ou visite minhas redes sociais:</h2>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fa-brands fa-github fa-fade"></i>
+                <p><span class="contact-tile">Git Hub: </span><a href="https://github.com/fmcnit" target="_blank" rel="external">github.com/fmcnit</a></p>
+  
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fa-brands fa-linkedin fa-fade"></i>
+                <p><span class="contact-tile">Linkedin: </span><a href="https://www.linkedin.com/in/fmcnit/" target="_blank" rel="external">fmc_nit@hotmail.com</a></p>
+              </div>
+
+              <div class="col-md-4 contact-box">
+                <i class="fa-brands fa-instagram fa-fade"></i>
+                <p><span class="contact-tile">Perfil: </span><a href="www.instagram.com" target="_blank" rel="external">@_fabianomagalhaes</a></p>
+              
+            
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por: Fabiano Magalhães Cardoso - 2024</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
