@@ -622,6 +622,12 @@ header, .navbar {
   }
 
   /* filter */
+#portfolio-area{
+    margin-top: 15px;
+    border-top: 10px solid #3EC1D5;
+
+  }
+
   #portfolio-area .filter-btn {
     margin-bottom: 20px;
   }
